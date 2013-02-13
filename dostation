@@ -1,0 +1,9 @@
+#! /usr/bin/python
+
+import re
+from StationNormals import *
+
+s = StationNormals("1981-2010/products/station/USC00010655.normals.txt")
+
+print s.meta['Station Name']
+print s.normals['Temperature-Related']['Daily']['dly-tmax-normal']
