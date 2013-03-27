@@ -93,7 +93,7 @@ class StationNormals:
                 val = m.group(2).strip()
                 self.meta[key] = val
                 continue
-            m = re.match(r'^(.*)\s+Normals\s*$', line)
+            m = re.match(r'^(.*)\s+(Normals|Pseudonormals)\s*$', line)
             if m:
                 type = m.group(1).strip()
                 if type not in self.normals:
